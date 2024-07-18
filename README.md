@@ -21,33 +21,34 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Project Details
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Products Database REST API
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+This project is a REST API for managing a products database, built using Laravel 11. The API provides endpoints for creating, reading, updating, and deleting products.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### Features
 
-## Laravel Sponsors
+- **Create Product**: Add a new product to the database.
+- **Read Products**: Retrieve a list of all products or a single product by ID.
+- **Update Product**: Modify the details of an existing product.
+- **Delete Product**: Remove a product from the database.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+#### Endpoints
 
-### Premium Partners
+- `GET /api/products` - Retrieve all products.
+- `GET /api/products/{id}` - Retrieve a single product by ID.
+- `POST /api/products` - Create a new product.
+- `PUT /api/products/{id}` - Update an existing product.
+- `DELETE /api/products/{id}` - Delete a product.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+#### Setup
+
+1. Clone the repository.
+2. Install dependencies: `composer install`
+3. Configure your `.env` file with your database credentials.
+4. Run migrations: `php artisan migrate`
+5. Start the development server: `php artisan serve`
 
 ## Contributing
 
